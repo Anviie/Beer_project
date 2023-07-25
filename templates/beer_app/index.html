@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load django_bootstrap5 %}
+
+{% block content %}
+<ul>{{ beer.name }}</ul>
+<ul>Вкус - {{ beer.taste }}</ul>
+<ul>Цена - {{ beer.price }}</ul>
+<ul>{{ beer.comment }}</ul>
+<ul>Средняя оценка - {{ beer.total_rate }}</ul>
+<div>
+<img src="{{ beer.image.url }}" height="100">
+</div>
+{% endblock content %}

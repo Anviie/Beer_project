@@ -1,0 +1,13 @@
+{% load static %}
+<header>
+  <nav class="navbar navbar-light" style="background-color: lightyellow">
+    <div class="container">
+      <a class="navbar-brand" href="{% url 'beer_app:index' %}">
+        <h3>Приложение для ценителей пива</h3>
+      </a>
+<a class="navbar-brand" href="{% url 'beer_app:beer_form' %}">
+        <h3>Добавить пиво</h3>
+      </a>
+    </div>
+  </nav>
+</header>
